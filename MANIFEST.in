@@ -1,0 +1,11 @@
+include mydash_library/mydash_library.min.js
+include mydash_library/mydash_library.min.js.map
+include mydash_library/async-*.js
+include mydash_library/async-*.js.map
+include mydash_library/*-shared.js
+include mydash_library/*-shared.js.map
+include mydash_library/metadata.json
+include mydash_library/package-info.json
+include README.md
+include LICENSE
+include package.json
