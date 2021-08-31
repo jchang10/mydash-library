@@ -13,7 +13,7 @@ It renders an input with the property `value`
 which is editable by the user.
 Keyword arguments:
 - `id` (String; optional): The ID used to identify this component in Dash callbacks.
-- `date` (String; required): A label that will be printed when this component is rendered.
+- `date` (String; optional): A label that will be printed when this component is rendered.
 """
 function dashtimeago(; kwargs...)
         available_props = Symbol[:id, :date]

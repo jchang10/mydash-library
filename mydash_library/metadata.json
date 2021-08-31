@@ -15,7 +15,7 @@
         "type": {
           "name": "string"
         },
-        "required": true,
+        "required": false,
         "description": "A label that will be printed when this component is rendered."
       },
       "setProps": {

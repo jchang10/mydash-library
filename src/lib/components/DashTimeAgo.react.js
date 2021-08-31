@@ -13,9 +13,11 @@ export default class DashTimeAgo extends Component {
     render() {
         const {id, date, setProps} = this.props;
 
+        let date2 = date ? date : Date.now()
+
         return (
             <span id={id}>
-                <TimeAgo date={date} />
+                <TimeAgo date={date2} />
 
             </span>
         );
@@ -33,7 +35,8 @@ DashTimeAgo.propTypes = {
     /**
      * A label that will be printed when this component is rendered.
      */
-    date: PropTypes.string.isRequired,
+    // date: PropTypes.string.isRequired,
+    date: PropTypes.string,
 
     /**
      * Dash-assigned callback that should be called to report property changes
