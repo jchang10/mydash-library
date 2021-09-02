@@ -16,10 +16,10 @@ Keyword arguments:
 - id (string; optional):
     The ID used to identify this component in Dash callbacks.
 
-- date (string; optional):
+- date (string; required):
     A label that will be printed when this component is rendered."""
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, date=Component.UNDEFINED, **kwargs):
+    def __init__(self, id=Component.UNDEFINED, date=Component.REQUIRED, **kwargs):
         self._prop_names = ['id', 'date']
         self._type = 'DashTimeAgo'
         self._namespace = 'mydash_library'
@@ -30,7 +30,7 @@ Keyword arguments:
         _locals = locals()
         _locals.update(kwargs)  # For wildcard attrs
         args = {k: _locals[k] for k in _explicit_args if k != 'children'}
-        for k in []:
+        for k in ['date']:
             if k not in args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')
