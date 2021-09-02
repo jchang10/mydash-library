@@ -9,7 +9,8 @@ app.layout = html.Div([
     mydash_library.DashTimeAgo(
         # id='input',
         # value='my-value',
-        # label='my-label'
+        # label='my-label',
+        date='2021-09-01T00:00Z',
     ),
     html.Div(id='output')
 ])
